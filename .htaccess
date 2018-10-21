@@ -1,0 +1,16 @@
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /
+    RewriteCond %{HTTP:Authorization} ^Basic.*
+    RewriteRule (.*) index.php?authorization=%{HTTP:Authorization} [QSA,L]
+</IfModule>
+
+<Files "index.php">
+    AuthUserFile .htpasswd
+    AuthType Basic
+    AuthName "Test Web Service"
+    Require ValidUser
+</Files>
+ErrorDocument 401 ./login.php
