@@ -37,7 +37,7 @@ if ($_GET['info']){
 
 
 ?>
-<br><hr><a href="/">Назад</a>
+<br><hr><a href="/">Back</a>
 <br><hr>
 <h4>View array: </h4>
 <?php 
