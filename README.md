@@ -1,10 +1,10 @@
 # test web
-Web service http port 80
+Web service http
 
 login user
 passwd user
 
-get param 
+get param
   info=mem Get info memory
   info=cpu Get info Cpu
   info=pwd Get info pwd
